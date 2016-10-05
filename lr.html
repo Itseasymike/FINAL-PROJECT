@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Late Registration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="lr.css">
+</head>
+<body>
+<!--NAV BAR -->
+	<nav> 
+	<span><a href="home.html">home</a></span> 
+	<span><a href="cd.html">college dropout</a></span> 
+	<span><a href="lr.html">late registration</a></span> 
+	<span><a href="grad.html">graduation</a></span> 
+	<span><a href="heartbreak.html">808's & heartbreak</a></span>
+	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
+	<span><a href="yeezus.html">yeezus</a></span>
+	<span><a href="tlop.html">the life of pablo</a></span>
+	</nav>
+
+	<!--SLIDESHOW-->
+	<div id ="slide">
+
+	<div class="images"><img src="lr1.jpg"></div>
+
+	<div class="images"><img src="lr2.jpg"></div>
+
+	<div class="images"><img src="lr3.jpg"></div>
+
+	<div class="images"><img src="lr4.jpg"></div>
+
+	<div class="images"><img src="lr5.jpg"></div>
+
+	</div>
+
+	<!--MAIN CONTENT -->
+	<div id="container">
+	<h1>Late Registration</h1>
+	
+	<!--COURTESY OF WIKIPEDIA-->
+	<p>Late Registration is the second studio album by American hip hop producer and rapper Kanye West, released on August 30, 2005, by Roc-A-Fella Records and Def Jam Recordings. It was recorded over the course of a year in sessions held across studios in New York City and Hollywood, with West collaborating with American record producer and composer Jon Brion. The album features guest contributions from Adam Levine, Lupe Fiasco, Jamie Foxx, Common, Jay-Z, Brandy, and Nas, among others. Its production was notably more lush and elaborate than West's 2004 debut album The College Dropout, as he utilized intricate sampling methods and string orchestration with Brion. West's lyrics explore both personal and political themes, including poverty, drug trafficking, racism, healthcare, and the blood diamond trade.</p>
+
+	<p>Late Registration received rave reviews from critics and earned West several accolades, including a Grammy Award for Best Rap Album at the 2006 Grammy Awards and an Album of the Year nomination. It appeared at the top of several publications year-end lists of top albums. Rolling Stone named it the best album of 2005, and included it at number 118 on its list of the 500 Greatest Albums of All Time in 2012. Late Registration debuted at number one on the Billboard 200 chart, selling 860,000 copies in its first week.</p>
+
+	<p>The album has thus far sold over 3.1 million copies in the United States and has been certified triple platinum by the Recording Industry Association of America. Late Registration produced five singles, including the international hits "Touch the Sky", "Heard 'Em Say" and "Gold Digger", the latter of which topped the Billboard Hot 100 at number one. Music videos for all five singles were produced. West supported the album with a promotional concert tour, and the live album Late Orchestration.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/JCYAjGnvc7U" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<!--TRACKLIST/PLAYLIST-->
+	<div id="track">
+		<table id="list">
+		<h2 id="hide">Tracklist</h2>
+			<tr id="row">
+				<td>No.</td>
+				<td>Title</td>
+
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>Wake Up Mr. West</td>
+			</tr>			
+			<tr>
+				<td>2.</td>
+				<td>Heard 'Em Say</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Touch the Sky</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>Gold Digger</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>Skit #1</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Drive Slow</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>My Way Home</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>Crack Music</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>Roses</td>
+			<tr>
+				<td>10.</td>
+				<td>Bring Me Down</td>
+			</tr>
+			<tr>
+				<td>11.</td>
+				<td>Addiction</td>
+			</tr>
+			<tr>
+				<td>12.</td>
+				<td>Skit #2</td>
+			</tr>
+			<tr>
+				<td>13.</td>
+				<td>Diamonds from Sierra Leone (Remix) </td>
+			</tr>
+			<tr>
+				<td>14.</td>
+				<td>We Major</td>
+			</tr>
+			<tr>
+				<td>14.</td>
+				<td>Skit #3</td>
+			</tr>
+			<tr>
+				<td>16.</td>
+				<td>Hey Mama</td>
+			</tr>
+			<tr>
+				<td>17.</td>
+				<td>Celebration</td>
+			</tr>
+			<tr>
+				<td>18.</td>
+				<td>Skit #4</td>
+			</tr>
+			<tr>
+				<td>19.</td>
+				<td>Gone</td>
+			</tr>
+			<tr>
+				<td>20.</td>
+				<td>Diamonds from Sierra Leone</td>
+			</tr>
+			<tr>
+				<td>21.</td>
+				<td>Late</td>
+			</tr>
+		</table>
+		<!-- ONCLICK FUNNCTION CALLED -->
+		<button id="listen" type="button" onclick="myFunction()">Listen</button>
+		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:5ll74bqtkcXlKE7wwkMq4g" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+	</div>
+
+	<footer>
+		<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
+	</footer>
+</body>
+
+	<script type="text/javascript">
+
+	//REMOVES TRACKLIST AND DISPLAYS SPOTIFY PLAYLIST
+		function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('list').style.display = 'none';
+		document.getElementById('listen').style.display = 'none';
+		document.getElementById('spotify').style.display = 'block';
+	}
+		//slideshow 
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//autoplay slideshow
+		 slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+    	setTimeout(showDiv, 4000);
+	}
+	</script>
+</html>
+</html>

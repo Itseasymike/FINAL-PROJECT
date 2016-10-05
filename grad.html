@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graduation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="grad.css">
+</head>
+<body>
+<!--NAV BAR -->
+	<nav> 
+	<span><a href="home.html">home</a></span> 
+	<span><a href="cd.html">college dropout</a></span> 
+	<span><a href="lr.html">late registration</a></span> 
+	<span><a href="grad.html">graduation</a></span> 
+	<span><a href="heartbreak.html">808's & heartbreak</a></span>
+	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
+	<span><a href="yeezus.html">yeezus</a></span>
+	<span><a href="tlop.html">the life of pablo</a></span>
+	</nav>
+	
+	<!--SLIDESHOW-->
+	<div id ="slide">
+
+	<div class="images"><img src="grad1.jpg"></div>
+
+	<div class="images"><img src="grad2.jpg"></div>
+
+	<div class="images"><img src="grad3.jpg"></div>
+
+	<div class="images"><img src="grad4.jpg"></div>
+
+	<div class="images"><img src="grad5.jpg"></div>
+
+	</div>
+
+	<!--MAIN CONTENT -->
+	<div id="container">
+	<h1>Graduation</h1>
+
+	<!--COURTESY OF WIKIPEDIA-->
+	<p>Graduation is the third studio album by American hip hop recording artist and record producer Kanye West. It was released on September 11, 2007, by Roc-A-Fella Records. Recording sessions for the album took place during 2005 to 2007 at Chung King Studios and Sony Music Studios in New York City and at Chalice Studios and The Record Plant in Los Angeles. It was primarily produced by West himself, with contributions from DJ Toomp, as well as Mike Dean, Nottz, Brian "All Day" Miller, Eric Hudson, Warryn Campbell, Gee Roberson, Plain Pat and Jon Brion. It features guest contributions from artists, including Mos Def, Dwele, T-Pain, Lil Wayne, DJ Premier and Chris Martin of Coldplay. The album's cover artwork was designed by Japanese contemporary artist Takashi Murakami.</p>
+
+	<p>Inspired by rock bands and house-music, Graduation marked a departure away from the ornate, soul-based sound of West's previous releases toward a more anthemic style of rap music that would function well while he was performing in large arenas. Toward this end, West incorporated synthesizer sounds into his production and dabbled with electronic music, while sampling from a wider spectrum of music genres. Lyrically, the album is more introspective in comparison to its predecessors, as West dedicated much of Graduation towards analyzing himself and conveying his ambivalent outlook on his newfound fame. It continues the education theme of West's previous two studio albums, The College Dropout (2004) and Late Registration (2005).</p>
+
+	<p>The album debuted at number one on the US Billboard 200, selling 957,000 copies in its first week. It produced five singles, including the international hits "Can't Tell Me Nothing", "Stronger", and "Good Life". The coinciding release dates between Graduation and a fellow rapper 50 Cent's Curtis generated much publicity over the idea of a sales competition, resulting in record-breaking sales performances by both albums. The outcome of the competition marks a turning point in hip-hop culture, when the dominance of gangsta rap in mainstream hip-hop was brought to an end. Graduation received positive reviews from most critics and earned West several accolades, including his third Grammy Award for Best Rap Album. The album has sold 2,700,000 copies in the US and has been certified double platinum by the Recording Industry Association of America.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/iHVGYOE0aIs" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<!--TRACKLIST/PLAYLIST-->
+	<div id="track">
+		<table id="list">
+		<h2 id="hide">Tracklist</h2>
+			<tr id="row">
+				<td>No.</td>
+				<td>Title</td>
+
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>Good Morning</td>
+			</tr>			
+			<tr>
+				<td>2.</td>
+				<td>Champion</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Stronger</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>I Wonder</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>Good Life</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Can't Tell Me Nothing</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>Barry Bonds</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>Drunk and Hot Girls</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>Flashing Lights</td>
+			<tr>
+				<td>10.</td>
+				<td>Everything I Am</td>
+			</tr>
+			<tr>
+				<td>11.</td>
+				<td>The Glory</td>
+			</tr>
+			<tr>
+				<td>12.</td>
+				<td>Homecoming</td>
+			</tr>
+			<tr>
+				<td>13.</td>
+				<td>Big Brother</td>
+			</tr>
+		</table>
+		<!-- ONCLICK FUNNCTION CALLED -->
+		<button id="listen" type="button" onclick="myFunction()">Listen</button>
+		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:3SZr5Pco2oqKFORCP3WNj9" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+	</div>
+
+	<footer>
+		<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
+	</footer>
+</body>
+
+	<script type="text/javascript">
+	//REMOVES TRACKLIST AND DISPLAYS SPOTIFY PLAYLIST
+		function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('list').style.display = 'none';
+		document.getElementById('listen').style.display = 'none';
+		document.getElementById('spotify').style.display = 'block';
+	}
+		//slideshow 
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//autoplay slideshow
+		 slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+    	setTimeout(showDiv, 4000);
+	}
+	</script>
+</html>

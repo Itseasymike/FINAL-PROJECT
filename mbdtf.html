@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Beautiful Dark Twisted Fantasy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="mbdtf.css">
+</head>
+<body>
+<!--NAV BAR -->
+	<nav> 
+	<span><a href="home.html">home</a></span> 
+	<span><a href="cd.html">college dropout</a></span> 
+	<span><a href="lr.html">late registration</a></span> 
+	<span><a href="grad.html">graduation</a></span> 
+	<span><a href="heartbreak.html">808's & heartbreak</a></span>
+	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
+	<span><a href="yeezus.html">yeezus</a></span>
+	<span><a href="tlop.html">the life of pablo</a></span>
+	</nav>
+
+	<!--SLIDESHOW-->
+	<div id ="slide">
+
+	<div class="images"><img src="mbdtf1.jpg"></div>
+
+	<div class="images"><img src="mbdtf2.jpg"></div>
+
+	<div class="images"><img src="mbdtf3.jpg"></div>
+
+	<div class="images"><img src="mbdtf4.jpg"></div>
+
+	<div class="images"><img src="mbdtf5.jpg"></div>
+
+	</div>
+
+	<!--MAIN CONTENT -->
+	<div id="container">
+	<h1>My Beautiful Dark Twisted Fantasy</h1>
+
+	<!--COURTESY OF WIKIPEDIA-->
+	<p>My Beautiful Dark Twisted Fantasy is the fifth studio album by American hip hop producer and rapper Kanye West, released on November 22, 2010, by Roc-A-Fella Records. Following a period of public and legal controversy, West retreated to a "self-imposed exile" in Hawaii in 2009. There, he worked on the album in a communal recording environment that involved numerous contributing musicians and producers. The album features guest appearances from Bon Iver, Jay Z, Pusha T, Rick Ross, Kid Cudi, Nicki Minaj, John Legend and more.</p>
+
+	<p>Production is led by West himself, alongside a variety of high-profile record producers including Mike Dean, No I.D., Jeff Bhasker, RZA, S1, Bink and DJ Frank E. Noted by critics for its maximalist aesthetic, opulent production quality, and dichotomous themes, My Beautiful Dark Twisted Fantasy incorporates aspects of West's previous works, including soul, baroque, electro, and symphonic styles. The album deals with themes of excess and celebrity, and explores such issues as consumer culture, race, and the idealism of the American Dream.</p>
+
+	<p>To promote My Beautiful Dark Twisted Fantasy, West released free songs through his GOOD Fridays series and four singles: the Billboard hits "Power", "Monster", and "Runaway", and the international hit "All of the Lights". It was also promoted with a short film set to the record's music, Runaway. The album debuted at number one on the Billboard 200. It was certified platinum by the Recording Industry Association of America and had sold 1,032,000 copies in the US by 2013. My Beautiful Dark Twisted Fantasy received widespread critical acclaim and was also named the best record of 2010 in numerous critics' polls and year-end lists.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/BOMqT4q5WRY" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<!--TRACKLIST/PLAYLIST-->
+	<div id="track">
+		<table id="list">
+		<h2 id="hide">Tracklist</h2>
+			<tr id="row">
+				<td>No.</td>
+				<td>Title</td>
+
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>Dark Fantasy</td>
+			</tr>			
+			<tr>
+				<td>2.</td>
+				<td>Gorgeous</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>POWER</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>All of the Lights (Interlude)</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>All of the Lights</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Monster</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>So Applled</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>Devil in a New Dress</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>Runaway</td>
+			<tr>
+				<td>10.</td>
+				<td>Hell of a Life</td>
+			</tr>
+			<tr>
+				<td>11.</td>
+				<td>Blame Game</td>
+			</tr>
+			<tr>
+				<td>12.</td>
+				<td>Lost in the World</td>
+			</tr>
+			<tr>
+				<td>13.</td>
+				<td>Who Will Survive in America</td>
+			</tr>
+		</table>
+		<!-- ONCLICK FUNNCTION CALLED -->
+		<button id="listen" type="button" onclick="myFunction()">Listen</button>
+		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:20r762YmB5HeofjMCiPMLv" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+
+		<footer>
+			<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
+		</footer>
+</body>
+
+	<script type="text/javascript">
+	//REMOVES TRACKLIST AND DISPLAYS SPOTIFY PLAYLIST
+		function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('list').style.display = 'none';
+		document.getElementById('listen').style.display = 'none';
+		document.getElementById('spotify').style.display = 'block';
+	}
+
+	//slideshow 
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//autoplay slideshow
+		 slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+    	setTimeout(showDiv, 4000);
+	}
+	</script>
+</html>

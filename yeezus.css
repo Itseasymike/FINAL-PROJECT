@@ -1,0 +1,150 @@
+body {
+	background: url("yeezusbg.jpg;") no-repeat center fixed;
+	background-size: cover;
+	font-family: Arial;
+	color: black;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+nav {
+	box-shadow: 0 0 5px black;
+	text-align: center;
+	background: rgba(192,192,192,1);
+	padding: 15px;
+	font-family: avenir;
+	position: fixed;
+	top: 0;
+  	left: 0;
+	width: 100%;
+	z-index: 1738;
+}
+span {
+	padding: 8px;
+}
+span:hover {
+	background-color: rgba(255,255,255,.7);
+}
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: #FF6961;
+	text-shadow: 0 0 15px black;
+}
+h1 {
+	text-shadow: 0 0 2px black;
+	text-align: center;
+	padding-top: 10px;
+}
+#container {
+	width: 50%;
+	margin: 0 auto;
+	background: rgba(192,192,192,.7);
+	box-shadow: 0 0 5px black;
+	padding-bottom: 20px;
+}
+
+p {
+	text-align: justify;
+	margin: 10px;
+	padding: 20px;
+}
+iframe {
+	padding: 20px;
+	display: block;
+    margin: 0 auto;
+}
+img { 
+	border-radius: 5px;
+	display: block;
+	margin: 20px auto;
+	width: 1000px;
+	height: 400px;	
+	box-shadow: 0 0 5px black;
+	filter: grayscale(0%);
+}
+img:hover {
+	filter: grayscale(100%);
+
+}
+#slide {
+	display: block;
+	margin: 0 auto;
+	margin-top: 70px;
+	width: 1000px;
+	height: 400px;
+}
+.images {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .5}
+	to {opacity: 1}
+}
+@keyframes fade {
+	from {opacity: .5}
+	to {opacity: 1}
+}
+#track {
+	width: 50%;
+	margin: 40px auto;
+	background: rgba(192,192,192,.7);
+	text-align: center;
+	box-shadow: 0 0 5px black;
+}
+h2 {
+	text-shadow: 0 0 2px black;
+	padding: 10px;
+	text-align: center;
+}
+table {
+	box-shadow: 0 0 5px black;
+	margin: 0 auto;
+	background: rgba(192,192,192,.4);
+	width: 60%;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid rgba(255,255,255,.4);
+	background: rgba(192,192,192,.4);
+	text-align: justify;
+}
+#row {
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+button:hover {
+	cursor: pointer;
+}
+button {
+	box-shadow: 0 0 2px black;
+	color: black;
+	border: 1px solid rgba(255,255,255,.5);
+	background-color: rgba(192,192,192,.6);
+	margin:10px;
+	padding: 8px;
+	text-align: center;
+}
+#spotify {
+	display: none;
+	padding: 20px;
+	display: block;
+    margin: 0 auto;
+}
+footer {
+	color: black;
+	text-align: right;
+	background: rgba(0,0,0,0);
+	padding: 15px;
+	font-family: avenir;
+  	height: 30px;
+	bottom: 0;
+  	left: 0;
+ }

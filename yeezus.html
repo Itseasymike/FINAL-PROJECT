@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yeezus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yeezus.css">
+</head>
+<body>
+<!--NAV BAR -->
+	<nav> 
+	<span><a href="home.html">home</a></span> 
+	<span><a href="cd.html">college dropout</a></span> 
+	<span><a href="lr.html">late registration</a></span> 
+	<span><a href="grad.html">graduation</a></span> 
+	<span><a href="heartbreak.html">808's & heartbreak</a></span>
+	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
+	<span><a href="yeezus.html">yeezus</a></span>
+	<span><a href="tlop.html">the life of pablo</a></span>
+	</nav>
+
+	<!--SLIDESHOW-->
+	<div id ="slide">
+
+	<div class="images"><img src="yeezus1.jpg"></div>
+
+	<div class="images"><img src="yeezus2.jpg"></div>
+
+	<div class="images"><img src="yeezus3.jpg"></div>
+
+	<div class="images"><img src="yeezus4.jpg"></div>
+
+	<div class="images"><img src="yeezus5.png"></div>
+
+	</div>
+
+	<!--MAIN CONTENT -->
+	<div id="container">
+	<h1>Yeezus</h1>
+
+	<!--COURTESY OF WIKIPEDIA-->
+	<p>Yeezus is the seventh studio album by American rapper Kanye West. It was released on June 18, 2013 by Def Jam Recordings. West gathered a number of artists and close collaborators for production on the album, including Mike Dean, Daft Punk, Noah Goldstein, Hudson Mohawke, Arca, Che Pope, Brodinski, Gesaffelstein and Travis Scott. Yeezus also features guest vocals from Justin Vernon, Chief Keef, Assassin, King L, Charlie Wilson and Frank Ocean. Fifteen days before its release date, West enlisted the help of producer Rick Rubin to strip down the record's sound in favor of a more minimalist approach.</p>
+
+	<p>Yeezus has been characterized as West's most experimental and sonically abrasive work. It draws from an array of genres including industrial, acid house, dancehall, punk, electro, and Chicago drill while continuing West's unconventional use of samples. The release features no album artwork, and the physical CD edition of the album was released in a clear jewel box with only a strip of red tape and sample credits. Initial promotion of Yeezus included worldwide video projections of the album's music and live television performances. West released two singles from the album, the song "Black Skinhead" in July 2013 and "Bound 2" the following month.</p>
+
+	<p>Yeezus received widespread acclaim from critics, many of whom named it among West's best work and commended its brash direction, though public response proved considerably more divided. The album debuted at number one on the Billboard 200, selling 327,000 copies in its first week of release. It topped the charts of 30 other countries, including the United Kingdom and Australia. Yeezus was nominated in two categories at the 2014 Grammy Awards, including Best Rap Album.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xFPoQ36EbA4" frameborder="0" allowfullscreen></iframe>
+
+	</div>
+
+	<!--TRACKLIST/PLAYLIST-->
+	<div id="track">
+		<table id="list">
+		<h2 id="hide">Tracklist</h2>
+			<tr id="row">
+				<td>No.</td>
+				<td>Title</td>
+
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>On Sight</td>
+			</tr>			
+			<tr>
+				<td>2.</td>
+				<td>Black Skinhead</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>I Am a God</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>New Slaves</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>Hold My Liquor</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Im In It</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>Blood on the Leaves</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>Guilt Trip</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>Send It Up</td>
+			<tr>
+				<td>10.</td>
+				<td>Bound 2</td>
+			</tr>
+
+		</table>
+		<!-- ONCLICK FUNNCTION CALLED -->
+		<button id="listen" type="button" onclick="myFunction()">Listen</button>
+		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:7D2NdGvBHIavgLhmcwhluK" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+	</div>
+
+	<footer>
+		<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
+	</footer>
+</body>
+
+	<script>
+	//REMOVES TRACKLIST AND DISPLAYS SPOTIFY PLAYLIST
+		function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('list').style.display = 'none';
+		document.getElementById('listen').style.display = 'none';
+		document.getElementById('spotify').style.display = 'block';
+	}
+	//slideshow 
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//autoplay slideshow
+		 slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+    	setTimeout(showDiv, 4000);
+	}
+	</script>
+</html>

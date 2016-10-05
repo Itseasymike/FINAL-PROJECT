@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>808's and Heartbreak</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="heartbreak.css">
+</head>
+<body>
+<!--NAV BAR -->
+	<nav> 
+	<span><a href="home.html">home</a></span> 
+	<span><a href="cd.html">college dropout</a></span> 
+	<span><a href="lr.html">late registration</a></span> 
+	<span><a href="grad.html">graduation</a></span> 
+	<span><a href="heartbreak.html">808's & heartbreak</a></span>
+	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
+	<span><a href="yeezus.html">yeezus</a></span>
+	<span><a href="tlop.html">the life of pablo</a></span>
+	</nav>
+	
+	<!--SLIDESHOW-->
+	<div id ="slide">
+
+	<div class="images"><img src="heartbreak1.jpg"></div>
+
+	<div class="images"><img src="heartbreak2.jpg"></div>
+
+	<div class="images"><img src="heartbreak3.jpg"></div>
+
+	<div class="images"><img src="heartbreak4.jpg"></div>
+
+	<div class="images"><img src="heartbreak5.jpg"></div>
+
+	</div>
+
+	<!--MAIN CONTENT -->
+	<div id="container">
+	<h1>808's & Heartbreak</h1>
+
+	<!--COURTESY OF WIKIPEDIA-->
+	<p>808s & Heartbreak is the fourth studio album by American recording artist Kanye West, released on November 24, 2008, by Roc-A-Fella Records. It was recorded during September and October 2008 at Glenwood Studios in Burbank, California and Avex Recording Studio in Honolulu, Hawaii, with the help of producers No I.D., Jeff Bhasker and others.</p>
+
+	<p>Conceived in the wake of a series of distressing personal events, 808s & Heartbreak marked a major musical departure for West from his previous rap records, instead featuring a sparse, electronic sound and West singing through an Auto-Tune vocal processor. His lyrics explored themes of loss, alienated fame, and heartache, while the album's production abandoned conventional hip hop sounds in favor of a minimalist sonic palette, which included prominent use of the titular Roland TR-808 drum machine. Despite varying responses from audiences, the album received positive reviews from most critics and was named one of 2008's best records in several year-end lists.</p>
+
+	<p>808s & Heartbreak debuted at number one on the Billboard 200, selling 450,145 copies in its first week. By 2013, it had sold 1.7 million copies in the United States. Four singles were released to promote the record, including the hit singles "Love Lockdown" and "Heartless". In the years since its release, 808s & Heartbreak has been cited as a prominent influence on subsequent hip hop, pop, and R&B music, as a new wave of rappers, singers, and producers came to adopt aspects of its style and thematic content. In 2014, Rolling Stone named it one of the 40 most groundbreaking albums of all time.</p>
+
+	<!--SLIDESHOW-->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/y-5QTmoxc60" frameborder="0" allowfullscreen></iframe>
+
+	</div>
+
+	<!--TRACKLIST/PLAYLIST-->
+	<div id="track">
+		<table id="list">
+		<h2 id="hide">Tracklist</h2>
+			<tr id="row">
+				<td>No.</td>
+				<td>Title</td>
+
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>Say You Will</td>
+			</tr>			
+			<tr>
+				<td>2.</td>
+				<td>Welcome to Hertbreak</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Heartless</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>Amazing</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>Love Lockdown</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Paranoid</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td>RoboCop</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td>Street Lights</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td>Bad News</td>
+			<tr>
+				<td>10.</td>
+				<td>See you in My Nightmares</td>
+			</tr>
+			<tr>
+				<td>11.</td>
+				<td>Coldest Winter</td>
+			</tr>
+			<tr>
+				<td>12.</td>
+				<td>Pinocchio Story</td>
+			</tr>
+			<tr>
+				<td>13.</td>
+				<td>Big Brother</td>
+			</tr>
+		</table>
+		<!-- ONCLICK FUNNCTION CALLED -->
+		<button id="listen" type="button" onclick="myFunction()">Listen</button>
+		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:3WFTGIO6E3Xh4paEOBY9OU" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+		
+		<footer>
+			<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
+		</footer>
+</body>
+
+	<script type="text/javascript">
+	//REMOVES TRACKLIST AND DISPLAYS SPOTIFY PLAYLIST
+		function myFunction() {
+		document.getElementById('hide').style.display = 'none';
+		document.getElementById('list').style.display = 'none';
+		document.getElementById('listen').style.display = 'none';
+		document.getElementById('spotify').style.display = 'block';
+	}
+		//slideshow 
+	var slideIndex = 1;
+	showDiv(slideIndex);
+
+	function toggleDiv(n) {
+		showDiv(slideIndex += n);
+	}
+	//Displays images on roation
+	function showDiv(n) {
+		var i;
+		var x = document.getElementsByClassName("images");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//autoplay slideshow
+		 slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+    	setTimeout(showDiv, 4000);
+	}
+	</script>
+</html>

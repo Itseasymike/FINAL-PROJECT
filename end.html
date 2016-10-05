@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The End</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+		font-family: Arial;
+		background-color: black;
+}
+	
+		#myAnimation {
+			z-index: 999;
+			position: absolute;
+			margin: 0 auto;
+			opacity:  0;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			text-shadow: 0 0 2px gold;
+		}
+		a:hover {
+			font-weight: bold;
+		}
+		div {
+			text-align: center;
+		}
+		img {
+			z-index: 1;
+			height: 50%;
+			width: 50%;
+			display: block;
+			margin: 0 auto;
+			border-radius: 5px;
+		} 
+		h1 {
+			letter-spacing: 3px;
+		}
+		h4 {
+			letter-spacing: 2px;
+			text-shadow: 0 0 2px gold;
+			color: white;
+			float: right;
+			margin: 10px;
+			z-index: 1738;
+		}
+		#mike {
+			letter-spacing: 3px;
+		    -webkit-animation-name: glow;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in-out;
+  	        opacity: 0;
+}
+		@-webkit-keyframes glow { 
+  		0% {opacity: 0;}
+  		50%{opacity:1;}
+  		100%{opacity:0;}
+}
+	</style>
+</head>
+<body id="myContainer" onload="move(); display()">
+		<h4><a href="home.html">HOME</a></h4>
+		<div style="display: none;" id="myAnimation">
+
+		<a href="https://twitter.com/Itseasymike" target="_blank"><h2 id="mike">Site By: Itseasymike</h2></a>
+		<br>
+		<a href="https://twitter.com/PerScholas" target="_blank"><h2>@PerScholas</h2>
+
+		<a href="https://twitter.com/GA" target="_blank"><h2>@GA</h2>
+
+		<a href="https://twitter.com/JoanDevWorld" target="_blank"><h2>@JoanDevWorld</h2>
+
+		<a href="https://twitter.com/Bairon_JV" target="_blank"><h2>@Bairon_JV</h2>
+
+		<a href="https://twitter.com/mapunit" target="_blank"><h2>@mapunit</h2>
+
+		<a href="https://twitter.com/GuzmanJon5" target="_blank"><h2>@GuzmanJon5</h2>
+
+		<a href="https://twitter.com/BrandiniMichael" target="_blank"><h2>@BrandiniMichael</h2>
+
+		<a href="https://twitter.com/IseeVisionAries" target="_blank"><h2>@IseeVisionAries</h2>
+
+		<a href="https://twitter.com/MarcosWade82" target="_blank"><h2>@MarcosWade82</h2>
+
+		<a href="https://twitter.com/ccheng52" target="_blank"><h2>@ccheng52</h2>
+
+		<a href="https://twitter.com/tailchasingwolf" target="_blank"><h2>@tailchasingwolf</h2>
+
+		<a href="https://twitter.com/Dom__ish" target="_blank"><h2>@Dom_ish</h2>
+
+		<a href="https://twitter.com/miriamhz01" target="_blank"><h2>@miriamhz01</h2>
+
+		<a href="https://twitter.com/layala1992" target="_blank"><h2>@layala1992</h2>
+
+		<a href="https://twitter.com/kasaunfryson" target="_blank"><h2>@kasaunfryson</h2>
+
+		<a href="https://twitter.com/xin_ke_li" target="_blank"><h2>@xin_ke_li</h2>
+
+		<a href="https://twitter.com/ixmazek" target="_blank"><h2>@ixmazek</h2>
+		<br>
+		<h1>THANK YOU</h1>
+		<br>
+		<img src="ye2.png">
+		</div>
+
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/zfg3_cRN5Pc/?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</body>
+	<script>
+	function move() {
+		var elem = document.getElementById('myAnimation');
+		var pos = -1450;
+		var id = setInterval(frame , 20);
+		function frame() {
+			if (pos == 740) {
+				clearInterval(id);
+			} else {
+				pos++;
+				elem.style.opacity = "0.8";
+				elem.style.top = pos + 'px';
+			}
+		}
+	}
+	function display() {
+		document.getElementById('myAnimation').style.display= 'block';
+	}
+</script>
+</html>
