@@ -1,5 +1,5 @@
 body {
-	background: url("lrbg.jpg;") no-repeat center fixed;
+	background: url("../images/mbdtfbg.jpg;") no-repeat center fixed;
 	background-size: cover;
 	color: gold;
 	font-family: Arial;
@@ -11,7 +11,7 @@ body {
 nav {
 	box-shadow: 0 0 5px black;
 	text-align: center;
-	background: rgba(62,42,24,1);
+	background: rgba(102,0,0,1);
 	padding: 15px;
 	font-family: avenir;
 	position: fixed;
@@ -24,7 +24,7 @@ span {
 	padding: 8px;
 }
 span:hover {
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(255,255,255,.3);
 }
 a {
 	text-transform: uppercase;
@@ -32,8 +32,8 @@ a {
 	color: gold;
 }
 a:hover {
-	color: red;
-	text-shadow: 0 0 10px gold;
+	color: #FF6961;
+	text-shadow: 0 0 10px black;
 }
 h1 {
 	text-shadow: 0 0 2px black;
@@ -43,8 +43,8 @@ h1 {
 #container {
 	width: 50%;
 	margin: 0 auto;
-	background: rgba(62,42,24,.9);
-	box-shadow: 0 0 5px black;
+	background: rgba(128,0,0,.8);
+	box-shadow: 0 0 5px gold;
 	padding-bottom: 20px;
 }
 
@@ -54,16 +54,17 @@ p {
 	padding: 20px;
 }
 iframe {
+	border-radius: 5px;
 	padding: 20px;
 	display: block;
     margin: 0 auto;
 }
-img { 
+img {
 	border-radius: 5px;
 	display: block;
 	margin: 20px auto;
 	width: 1000px;
-	height: 400px;	
+	height: 400px;
 	box-shadow: 0 0 5px black;
 	filter: grayscale(0%);
 }
@@ -94,9 +95,9 @@ img:hover {
 #track {
 	width: 50%;
 	margin: 40px auto;
-	background: rgba(62,42,24,.9);
+	background: rgba(128,0,0,.8);
 	text-align: center;
-	box-shadow: 0 0 5px black;
+	box-shadow: 0 0 5px gold;
 }
 h2 {
 	text-shadow: 0 0 2px black;
@@ -104,18 +105,15 @@ h2 {
 	text-align: center;
 }
 table {
-	box-shadow: 0 0 5px black;
+	box-shadow: 0 0 5px gold;
+	background: rgba(128,0,0,.9);
 	margin: 0 auto;
-	background: rgba(62,42,24,.7);
 	width: 60%;
 	border-collapse: collapse;
 }
-th {
-	font-weight: bold;
-}
 td {
 	border: 1px solid rgba(255,215,0,.1);
-	background: rgba(62,42,24,.6);
+	background: rgba(128,0,0,.8);
 	text-align: justify;
 }
 #row {
@@ -126,10 +124,10 @@ button:hover {
 	cursor: pointer;
 }
 button {
-	box-shadow: 0 0 2px black;
+	box-shadow: 0 0 2px gold;
 	color: gold;
-	border: 1px solid rgba(255,255,255,.1);
-	background-color: rgba(62,42,24,.6);
+	border: 1px solid rgba(192,192,192,.1);
+	background-color: rgba(128,0,0,.8);
 	margin:10px;
 	padding: 8px;
 	text-align: center;
@@ -149,4 +147,4 @@ footer {
   	height: 30px;
 	bottom: 0;
   	left: 0;
-  }
+ }

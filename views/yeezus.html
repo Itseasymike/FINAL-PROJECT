@@ -2,16 +2,16 @@
 <html>
 <head>
 	<title>Yeezus</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="yeezus.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/yeezus.css">
 </head>
 <body>
 <!--NAV BAR -->
-	<nav> 
-	<span><a href="home.html">home</a></span> 
-	<span><a href="cd.html">college dropout</a></span> 
-	<span><a href="lr.html">late registration</a></span> 
-	<span><a href="grad.html">graduation</a></span> 
+	<nav>
+	<span><a href="home.html">home</a></span>
+	<span><a href="cd.html">college dropout</a></span>
+	<span><a href="lr.html">late registration</a></span>
+	<span><a href="grad.html">graduation</a></span>
 	<span><a href="heartbreak.html">808's & heartbreak</a></span>
 	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
 	<span><a href="yeezus.html">yeezus</a></span>
@@ -21,15 +21,15 @@
 	<!--SLIDESHOW-->
 	<div id ="slide">
 
-	<div class="images"><img src="yeezus1.jpg"></div>
+	<div class="images"><img src="../images/yeezus1.jpg"></div>
 
-	<div class="images"><img src="yeezus2.jpg"></div>
+	<div class="images"><img src="../images/yeezus2.jpg"></div>
 
-	<div class="images"><img src="yeezus3.jpg"></div>
+	<div class="images"><img src="../images/yeezus3.jpg"></div>
 
-	<div class="images"><img src="yeezus4.jpg"></div>
+	<div class="images"><img src="../images/yeezus4.jpg"></div>
 
-	<div class="images"><img src="yeezus5.png"></div>
+	<div class="images"><img src="../images/yeezus5.png"></div>
 
 	</div>
 
@@ -60,7 +60,7 @@
 			<tr>
 				<td>1.</td>
 				<td>On Sight</td>
-			</tr>			
+			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Black Skinhead</td>
@@ -116,7 +116,7 @@
 		document.getElementById('listen').style.display = 'none';
 		document.getElementById('spotify').style.display = 'block';
 	}
-	//slideshow 
+	//slideshow
 	var slideIndex = 1;
 	showDiv(slideIndex);
 
@@ -134,8 +134,8 @@
 			}
 			//autoplay slideshow
 		 slideIndex++;
-    	if (slideIndex > x.length) {slideIndex = 1} 
-    	x[slideIndex-1].style.display = "block"; 
+    	if (slideIndex > x.length) {slideIndex = 1}
+    	x[slideIndex-1].style.display = "block";
     	setTimeout(showDiv, 4000);
 	}
 	</script>

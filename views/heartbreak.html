@@ -2,34 +2,34 @@
 <html>
 <head>
 	<title>808's and Heartbreak</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="heartbreak.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/heartbreak.css">
 </head>
 <body>
 <!--NAV BAR -->
-	<nav> 
-	<span><a href="home.html">home</a></span> 
-	<span><a href="cd.html">college dropout</a></span> 
-	<span><a href="lr.html">late registration</a></span> 
-	<span><a href="grad.html">graduation</a></span> 
+	<nav>
+	<span><a href="home.html">home</a></span>
+	<span><a href="cd.html">college dropout</a></span>
+	<span><a href="lr.html">late registration</a></span>
+	<span><a href="grad.html">graduation</a></span>
 	<span><a href="heartbreak.html">808's & heartbreak</a></span>
 	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
 	<span><a href="yeezus.html">yeezus</a></span>
 	<span><a href="tlop.html">the life of pablo</a></span>
 	</nav>
-	
+
 	<!--SLIDESHOW-->
 	<div id ="slide">
 
-	<div class="images"><img src="heartbreak1.jpg"></div>
+	<div class="images"><img src="../images/heartbreak1.jpg"></div>
 
-	<div class="images"><img src="heartbreak2.jpg"></div>
+	<div class="images"><img src="../images/heartbreak2.jpg"></div>
 
-	<div class="images"><img src="heartbreak3.jpg"></div>
+	<div class="images"><img src="../images/heartbreak3.jpg"></div>
 
-	<div class="images"><img src="heartbreak4.jpg"></div>
+	<div class="images"><img src="../images/heartbreak4.jpg"></div>
 
-	<div class="images"><img src="heartbreak5.jpg"></div>
+	<div class="images"><img src="../images/heartbreak5.jpg"></div>
 
 	</div>
 
@@ -61,7 +61,7 @@
 			<tr>
 				<td>1.</td>
 				<td>Say You Will</td>
-			</tr>			
+			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Welcome to Hertbreak</td>
@@ -114,7 +114,7 @@
 		<button id="listen" type="button" onclick="myFunction()">Listen</button>
 		<iframe style="display: none;" id="spotify" src="https://embed.spotify.com/?uri=spotify:album:3WFTGIO6E3Xh4paEOBY9OU" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 		</div>
-		
+
 		<footer>
 			<h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy;Itseasymike</a></h4>
 		</footer>
@@ -128,7 +128,7 @@
 		document.getElementById('listen').style.display = 'none';
 		document.getElementById('spotify').style.display = 'block';
 	}
-		//slideshow 
+		//slideshow
 	var slideIndex = 1;
 	showDiv(slideIndex);
 
@@ -146,8 +146,8 @@
 			}
 			//autoplay slideshow
 		 slideIndex++;
-    	if (slideIndex > x.length) {slideIndex = 1} 
-    	x[slideIndex-1].style.display = "block"; 
+    	if (slideIndex > x.length) {slideIndex = 1}
+    	x[slideIndex-1].style.display = "block";
     	setTimeout(showDiv, 4000);
 	}
 	</script>

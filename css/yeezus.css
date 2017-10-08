@@ -1,8 +1,8 @@
 body {
-	background: url("cdbg.jpg;") no-repeat center fixed;
+	background: url("../images/yeezusbg.jpg;") no-repeat center fixed;
 	background-size: cover;
-	color: gold;
 	font-family: Arial;
+	color: black;
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 2s;
 	animation-name: fade;
@@ -11,7 +11,7 @@ body {
 nav {
 	box-shadow: 0 0 5px black;
 	text-align: center;
-	background: rgba(51,0,0,1);
+	background: rgba(192,192,192,1);
 	padding: 15px;
 	font-family: avenir;
 	position: fixed;
@@ -24,15 +24,16 @@ span {
 	padding: 8px;
 }
 span:hover {
-	background-color: rgba(255,255,255,.2);
+	background-color: rgba(255,255,255,.7);
 }
 a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: gold;
+	color: black;
 }
 a:hover {
-	text-shadow: 0 0 10px gold;
+	color: #FF6961;
+	text-shadow: 0 0 15px black;
 }
 h1 {
 	text-shadow: 0 0 2px black;
@@ -42,7 +43,7 @@ h1 {
 #container {
 	width: 50%;
 	margin: 0 auto;
-	background: rgba(51,0,0,.8);
+	background: rgba(192,192,192,.7);
 	box-shadow: 0 0 5px black;
 	padding-bottom: 20px;
 }
@@ -57,17 +58,18 @@ iframe {
 	display: block;
     margin: 0 auto;
 }
-img { 
+img {
 	border-radius: 5px;
 	display: block;
 	margin: 20px auto;
 	width: 1000px;
-	height: 400px;	
+	height: 400px;
 	box-shadow: 0 0 5px black;
 	filter: grayscale(0%);
 }
 img:hover {
 	filter: grayscale(100%);
+
 }
 #slide {
 	display: block;
@@ -90,11 +92,10 @@ img:hover {
 	from {opacity: .5}
 	to {opacity: 1}
 }
-
 #track {
 	width: 50%;
 	margin: 40px auto;
-	background: rgba(51,0,0,.8);
+	background: rgba(192,192,192,.7);
 	text-align: center;
 	box-shadow: 0 0 5px black;
 }
@@ -105,14 +106,14 @@ h2 {
 }
 table {
 	box-shadow: 0 0 5px black;
-	background: rgba(51,0,0,.7);
 	margin: 0 auto;
+	background: rgba(192,192,192,.4);
 	width: 60%;
 	border-collapse: collapse;
 }
 td {
-	border: 1px solid rgba(255,215,0,.1);
-	background: rgba(51,0,0,.6);
+	border: 1px solid rgba(255,255,255,.4);
+	background: rgba(192,192,192,.4);
 	text-align: justify;
 }
 #row {
@@ -124,9 +125,9 @@ button:hover {
 }
 button {
 	box-shadow: 0 0 2px black;
-	color: gold;
-	border: 1px solid rgba(255,215,0,.1);
-	background-color: rgba(51,0,0,.6);
+	color: black;
+	border: 1px solid rgba(255,255,255,.5);
+	background-color: rgba(192,192,192,.6);
 	margin:10px;
 	padding: 8px;
 	text-align: center;
@@ -138,6 +139,7 @@ button {
     margin: 0 auto;
 }
 footer {
+	color: black;
 	text-align: right;
 	background: rgba(0,0,0,0);
 	padding: 15px;
@@ -145,4 +147,4 @@ footer {
   	height: 30px;
 	bottom: 0;
   	left: 0;
-}
+ }

@@ -2,35 +2,35 @@
 <html>
 <head>
 	<title>The Life of Pablo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="tlop.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/tlop.css">
 </head>
 <body>
 <!--NAV BAR -->
-	<nav> 
-	<span><a href="home.html">home</a></span> 
-	<span><a href="cd.html">college dropout</a></span> 
-	<span><a href="lr.html">late registration</a></span> 
-	<span><a href="grad.html">graduation</a></span> 
+	<nav>
+	<span><a href="home.html">home</a></span>
+	<span><a href="cd.html">college dropout</a></span>
+	<span><a href="lr.html">late registration</a></span>
+	<span><a href="grad.html">graduation</a></span>
 	<span><a href="heartbreak.html">808's & heartbreak</a></span>
 	<span><a href="mbdtf.html">my beautiful dark twisted fantasy</a></span>
 	<span><a href="yeezus.html">yeezus</a></span>
 	<span><a href="tlop.html">the life of pablo</a></span>
 	<span><a id="end" href="end.html">the end</a></span>
 	</nav>
-	
+
 	<!--SLIDESHOW-->
 	<div id ="slide">
 
-	<div class="images"><img src="tlop1.jpg"></div>
+	<div class="images"><img src="../images/tlop1.jpg"></div>
 
-	<div class="images"><img src="tlop2.jpg"></div>
+	<div class="images"><img src="../images/tlop2.jpg"></div>
 
-	<div class="images"><img src="tlop3.jpg"></div>
+	<div class="images"><img src="../images/tlop3.jpg"></div>
 
-	<div class="images"><img src="tlop4.jpg"></div>
+	<div class="images"><img src="../images/tlop4.jpg"></div>
 
-	<div class="images"><img src="tlop5.jpg"></div>
+	<div class="images"><img src="../images/tlop5.jpg"></div>
 
 	</div>
 
@@ -46,7 +46,7 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/UYVJvgvV6eU" frameborder="0" allowfullscreen></iframe>
 
 	</div>
-	
+
 	<!--TRACKLIST/PLAYLIST-->
 	<div id="track">
 		<table id="list">
@@ -59,7 +59,7 @@
 			<tr>
 				<td>1.</td>
 				<td>Ultralight Beam</td>
-			</tr>			
+			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Father Stretch My Hands Pt. 1</td>
@@ -153,7 +153,7 @@
 		document.getElementById('listen').style.display = 'none';
 		document.getElementById('spotify').style.display = 'block';
 	}
-	//slideshow 
+	//slideshow
 	var slideIndex = 1;
 	showDiv(slideIndex);
 
@@ -173,7 +173,7 @@
 	//autoplay slideshow
 		 slideIndex++;
     	if (slideIndex > x.length) {slideIndex = 1}
-    	x[slideIndex-1].style.display = "block"; 
+    	x[slideIndex-1].style.display = "block";
     	setTimeout(showDiv, 4000);
 	}
 </script>

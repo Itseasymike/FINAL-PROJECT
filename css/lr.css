@@ -1,7 +1,7 @@
 body {
-	background: url("gradbg.jpg;") no-repeat center fixed;
+	background: url("../images/lrbg.jpg;") no-repeat center fixed;
 	background-size: cover;
-	color: rgb(192,192,192);
+	color: gold;
 	font-family: Arial;
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 2s;
@@ -11,7 +11,7 @@ body {
 nav {
 	box-shadow: 0 0 5px black;
 	text-align: center;
-	background: rgba(68, 50, 102,1);
+	background: rgba(62,42,24,1);
 	padding: 15px;
 	font-family: avenir;
 	position: fixed;
@@ -24,16 +24,16 @@ span {
 	padding: 8px;
 }
 span:hover {
-	background-color: rgba(255,255,255,.2);
+	background-color: rgba(0,0,0,.4);
 }
 a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: rgb(192,192,192);
+	color: gold;
 }
 a:hover {
-	color: #B39EB5;
-	text-shadow: 0 0 10px white;
+	color: red;
+	text-shadow: 0 0 10px gold;
 }
 h1 {
 	text-shadow: 0 0 2px black;
@@ -43,7 +43,7 @@ h1 {
 #container {
 	width: 50%;
 	margin: 0 auto;
-	background: rgba(68, 50, 102,.9);
+	background: rgba(62,42,24,.9);
 	box-shadow: 0 0 5px black;
 	padding-bottom: 20px;
 }
@@ -58,12 +58,12 @@ iframe {
 	display: block;
     margin: 0 auto;
 }
-img { 
+img {
 	border-radius: 5px;
 	display: block;
 	margin: 20px auto;
 	width: 1000px;
-	height: 400px;	
+	height: 400px;
 	box-shadow: 0 0 5px black;
 	filter: grayscale(0%);
 }
@@ -94,7 +94,7 @@ img:hover {
 #track {
 	width: 50%;
 	margin: 40px auto;
-	background: rgba(68, 50, 102,.9);
+	background: rgba(62,42,24,.9);
 	text-align: center;
 	box-shadow: 0 0 5px black;
 }
@@ -106,13 +106,16 @@ h2 {
 table {
 	box-shadow: 0 0 5px black;
 	margin: 0 auto;
-	background: rgba(68, 50, 102,.6);
+	background: rgba(62,42,24,.7);
 	width: 60%;
 	border-collapse: collapse;
 }
+th {
+	font-weight: bold;
+}
 td {
-	border: 1px solid rgba(192,192,192,.1);
-	background: rgba(68, 50, 102,.7);
+	border: 1px solid rgba(255,215,0,.1);
+	background: rgba(62,42,24,.6);
 	text-align: justify;
 }
 #row {
@@ -124,9 +127,9 @@ button:hover {
 }
 button {
 	box-shadow: 0 0 2px black;
-	color: rgb(192,192,192);
-	border: 1px solid rgba(192,192,192,.1);
-	background-color: rgba(68, 50, 102,1);
+	color: gold;
+	border: 1px solid rgba(255,255,255,.1);
+	background-color: rgba(62,42,24,.6);
 	margin:10px;
 	padding: 8px;
 	text-align: center;
@@ -137,11 +140,8 @@ button {
 	display: block;
     margin: 0 auto;
 }
-h4 a {
-	color: #1a0d26;
-}
 footer {
-	color: black;
+	color: gold;
 	text-align: right;
 	background: rgba(0,0,0,0);
 	padding: 15px;
